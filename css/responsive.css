@@ -1,0 +1,252 @@
+/*** RESPONSIVE GRID SYSTEM ***/
+
+/* EXTRA SMALL COLUMNS */
+.xsml-colm-1, .xsml-colm-2, .xsml-colm-3, .xsml-colm-4, .xsml-colm-5, .xsml-colm-6, .xsml-colm-7, .xsml-colm-8, .xsml-colm-9, .xsml-colm-10, .xsml-colm-11, .xsml-colm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+  
+.xsml-colm-1, .xsml-colm-2, .xsml-colm-3, .xsml-colm-4, .xsml-colm-5, .xsml-colm-6, .xsml-colm-7, .xsml-colm-8, .xsml-colm-9, .xsml-colm-10, .xsml-colm-11, .xsml-colm-12 {
+float: left;
+}
+
+.xsml-colm-1 {
+  width: 8.3333333334%
+}
+
+.xsml-colm-2 {
+  width: 16.6666666667%;
+}
+
+.xsml-colm-3 {
+  width: 25%;
+}
+
+.xsml-colm-4 {
+  width: 33.3333333334%;
+}
+
+.xsml-colm-5 {
+  width: 41.6666666667%;
+}
+
+.xsml-colm-6 {
+  width: 50%;
+}
+
+.xsml-colm-7 {
+  width: 58.3333333334%;
+}
+
+.xsml-colm-8 {
+  width: 66.6666666667%;
+}
+
+.xsml-colm-9 {
+  width: 75%;
+}
+
+.xsml-colm-10 {
+  width: 83.3333333334%;
+}
+
+.xsml-colm-11 {
+  width: 91.6666666667%;
+}
+
+.xsml-colm-12 {
+  width: 100%;
+}/* END OF EXTRA SMALL COLUMNS */  
+
+/* SMALL COLUMNS */
+
+.sml-colm-1, .sml-colm-2, .sml-colm-3, .sml-colm-4, .sml-colm-5, .sml-colm-6, .sml-colm-7, .sml-colm-8, .sml-colm-9, .sml-colm-10, .sml-colm-11, .sml-colm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  
+  .sml-colm-1, .sml-colm-2, .sml-colm-3, .sml-colm-4, .sml-colm-5, .sml-colm-6, .sml-colm-7, .sml-colm-8, .sml-colm-9, .sml-colm-10, .sml-colm-11, .sml-colm-12 {
+  float: left;
+  }
+  
+  .sml-colm-1 {
+    width: 8.3333333334%
+  }
+  
+  .sml-colm-2 {
+    width: 16.6666666667%;
+  }
+  
+  .sml-colm-3 {
+    width: 25%;
+  }
+  
+  .sml-colm-4 {
+    width: 33.3333333334%;
+  }
+  
+  .sml-colm-5 {
+    width: 41.6666666667%;
+  }
+  
+  .sml-colm-6 {
+    width: 50%;
+  }
+  
+  .sml-colm-7 {
+    width: 58.3333333334%;
+  }
+  
+  .sml-colm-8 {
+    width: 66.6666666667%;
+  }
+  
+  .sml-colm-9 {
+    width: 75%;
+  }
+  
+  .sml-colm-10 {
+    width: 83.3333333334%;
+  }
+  
+  .sml-colm-11 {
+    width: 91.6666666667%;
+  }
+  
+  .sml-colm-12 {
+    width: 100%;
+  }
+}/* END OF SMALL COLUMNS */
+
+/* MEDIUM COLUMNS */
+
+.med-colm-1, .med-colm-2, .med-colm-3, .med-colm-4, .med-colm-5, .med-colm-6, .med-colm-7, .med-colm-8, .med-colm-9, .med-colm-10, .med-colm-11, .med-colm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+  
+  .med-colm-1, .med-colm-2, .med-colm-3, .med-colm-4, .med-colm-5, .med-colm-6, .med-colm-7, .med-colm-8, .med-colm-9, .med-colm-10, .med-colm-11, .med-colm-12 {
+  float: left;
+  }
+  
+  .med-colm-1 {
+    width: 8.3333333334%
+  }
+  
+  .med-colm-2 {
+    width: 16.6666666667%;
+  }
+  
+  .med-colm-3 {
+    width: 25%;
+  }
+  
+  .med-colm-4 {
+    width: 33.3333333334%;
+  }
+  
+  .med-colm-5 {
+    width: 41.6666666667%;
+  }
+  
+  .med-colm-6 {
+    width: 50%;
+  }
+  
+  .med-colm-7 {
+    width: 58.3333333334%;
+  }
+  
+  .med-colm-8 {
+    width: 66.6666666667%;
+  }
+  
+  .med-colm-9 {
+    width: 75%;
+  }
+  
+  .med-colm-10 {
+    width: 83.3333333334%;
+  }
+  
+  .med-colm-11 {
+    width: 91.6666666667%;
+  }
+  
+  .med-colm-12 {
+    width: 100%;
+  }
+}/* END OF MEDIUM COLUMNS */
+
+/* LARGE COLUMNS */
+
+.lrg-colm-1, .lrg-colm-2, .lrg-colm-3, .lrg-colm-4, .lrg-colm-5, .lrg-colm-6, .lrg-colm-7, .lrg-colm-8, .lrg-colm-9, .lrg-colm-10, .lrg-colm-11, .lrg-colm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 1200px) {
+  .lrg-colm-1, .lrg-colm-2, .lrg-colm-3, .lrg-colm-4, .lrg-colm-5, .lrg-colm-6, .lrg-colm-7, .lrg-colm-8, .lrg-colm-9, .lrg-colm-10, .lrg-colm-11, .lrg-colm-12 {
+    float: left;
+  }
+  
+  .lrg-colm-1 {
+    width: 8.3333333334%
+  }
+  
+  .lrg-colm-2 {
+    width: 16.6666666667%;
+  }
+  
+  .lrg-colm-3 {
+    width: 25%;
+  }
+  
+  .lrg-colm-4 {
+    width: 33.3333333334%;
+  }
+  
+  .lrg-colm-5 {
+    width: 41.6666666667%;
+  }
+  
+  .lrg-colm-6 {
+    width: 50%;
+  }
+  
+  .lrg-colm-7 {
+    width: 58.3333333334%;
+  }
+  
+  .lrg-colm-8 {
+    width: 66.6666666667%;
+  }
+  
+  .lrg-colm-9 {
+    width: 75%;
+  }
+  
+  .lrg-colm-10 {
+    width: 83.3333333334%;
+  }
+  
+  .lrg-colm-11 {
+    width: 91.6666666667%;
+  }
+  
+  .lrg-colm-12 {
+    width: 100%;
+  }
+}/* END OF LARGE COLUMNS */

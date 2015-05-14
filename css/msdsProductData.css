@@ -1,0 +1,96 @@
+/* Header for Each Page */
+
+.farrellPageHeader {
+  position: relative;
+  font-weight: bold;
+  font-size: 2em;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .panel-body img {
+    width: 100%;
+  } 
+}
+
+
+/* MSDS Links to Buttons */
+
+.panel1 .panel-body img {
+  display: block;
+  margin: 0 auto;
+}
+
+.panel2 .msdsButtons:nth-child(2) img {
+  padding: 1.2em 0px;
+}
+
+.msdsButtonsMargin {
+  text-align: center;
+}
+
+.page-header-msds a {
+  position: relative;
+  top: 1em;
+  left: 4%;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.page-header-msds a:link {
+  color: #555;
+}
+
+.page-header-msds a:visited {
+  color: #555;
+}
+
+.page-header-msds a:hover {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.nonFarrellBrands a {
+  color: #000;
+  text-decoration: none;
+}
+
+#panel-10 img {
+  padding: 15px 0;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 10px;
+  line-height: 3;
+  border: 1px solid rgba(192, 192, 192, 1);
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px #000;
+}
+
+@media (max-width: 375px) {
+  .button a {
+    display: block;
+    padding: 10px;
+    font-size: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

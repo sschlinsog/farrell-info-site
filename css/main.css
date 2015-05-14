@@ -1,0 +1,554 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:700);
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One|Roboto:100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:bold);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+/* Page Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*  Company Header and NavBar */
+.farrellCompanyHeader {
+  width: 70%;
+  position: relative;
+  left: 20%;
+  top: -0.3em;
+  text-transform: uppercase;
+}
+
+.farrellCompanyHeader span {
+  position: relative;
+  font-size: 3vh;
+  color: #000;
+  left: 2%;
+}
+
+
+@media (max-width: 1050px) {
+  .farrellCompanyHeader span {
+    font-size: 2vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .farrellCompanyHeader span {
+    display: block;
+    font-size: 2vh;
+    
+  }
+}
+
+@media (max-width: 730px) {
+  .farrellCompanyHeader span {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .farrellCompanyHeader {
+    width: 100%;
+    margin: 20px auto;
+    left: 0%;
+  }
+}
+
+@media (max-width: 347px) {
+  .farrellCompanyHeader span {
+    font-size: 1.7vh;
+    text-align: center;
+    position: relative;
+    left: 5%;
+  }
+  
+  #rentalWrapper img {
+    width: 100%;
+  }
+}
+
+#navMenu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 2.1em;
+  background: #000;
+  position: relative;
+}
+
+#menuWrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#menuPosition {
+  float: right;
+}
+
+#navMenu ul {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  z-index: 1000;
+}
+
+.dropDownItem {
+  background: #999;
+  position: relative;
+  top: -0.2em;
+}
+
+#navMenu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  position: relative;
+  height: 2.1em;
+}
+
+#navMenu ul li a {
+  text-align: center;
+  text-decoration: none;
+  height: 30px;
+  width: 180px;
+  display: block;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#navMenu ul ul {
+  position: absolute;
+  visibility: hidden;
+  top: 30px;
+}
+
+#navMenu ul li:hover ul {
+  visibility: visible;
+}
+
+#navMenu li:hover {
+  background: #006B50;
+}
+
+#navMenu ul li:hover ul li a:hover {
+  background: #ccc;
+  color: #000;
+}
+
+#navMenu a:hover {
+  color: #bbb;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1216px) {
+  #menuWrapper {
+    display: none;
+  }
+  
+  #my-carousel {
+    
+  }
+  
+}
+
+@media (min-width: 1217px) {
+  #dl-menu {
+    display: none;
+  }
+}
+
+/* bottom store location bar */
+
+#storeBarContainer {
+  margin-top: 5em;
+  width: 100%;
+  height: 24em;
+  background: -webkit-linear-gradient(top, #006B50, #000);
+  background: -moz-linear-gradient(top, #006B50, #000);
+  background: -o-linear-gradient(top, #006B50, #000);
+  background: -ms-linear-gradient(top, #006B50, #000);
+  background: linear-gradient(top, #006B50, #000);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#006B50', endColorstr='#000');
+  box-shadow: inset 0 -5px 5px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 5px 5px rgba(0,170,80,1); /*top internal highlight*/
+  clear: both;
+}
+
+#storeLocations {
+  width: 80%;
+  height: 20em;
+  margin: 0 auto;
+  background: #eee;
+  position: relative;
+  top: 2em;
+  box-shadow: inset 0 -5px 5px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 5px 5px rgba(238,238,238,1); /*top internal highlight*/
+}
+
+#firstGroup {
+  float: left;
+  width: 50%;
+}
+
+#firstGroup a {
+  display: inline-block;
+  width: 33.333334%;
+  margin-left: -5px;
+}
+
+#firstGroup a img:first-child {
+  padding-left: 10px;
+}
+
+#secondGroup {
+  width: 50%;
+  float: left;
+}
+
+#secondGroup a {
+  display: inline-block;
+  width: 33.333334%;
+  margin-left: -5px;
+}
+
+@media (max-width: 1200px) {
+  
+  #firstGroup a img {
+    width: 100%;
+  }
+  
+  #secondGroup a img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1096px) {
+
+  #storeBarContainer {
+    height: 42em;
+  }
+
+  #storeLocations {
+    height: 90%;
+  }
+
+  #firstGroup {
+    clear: both;
+    width: 100%;
+  }
+  
+  #firstGroup a img {
+    width: 50%;
+  }
+
+  #secondGroup {
+    clear: both;
+    width: 100%;
+  }
+  
+  #secondGroup a img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 577px) {
+  
+  #storeBarContainer {
+    height: 135em;
+  }
+
+  #storeLocations {
+    height: 95%;
+  }
+
+  #firstGroup a {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #secondGroup a {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  #storeBarContainer {
+    height: 125em;
+  }
+
+  #storeLocations {
+    height: 95%;
+  }
+}
+
+@media (max-width: 300px) {
+  
+  #storeBarContainer {
+    height: 105em;
+  }
+}
+
+
+#storeLocations ul {
+  list-style: none;
+}
+
+#storeLocations a {
+  text-decoration: none;
+  color: #000;
+}
+
+#storeLocations a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+#storeLocations a:hover {
+  text-decoration: none;
+  color: #006B50;
+}
+
+#storeLocations h2 {
+  text-align: center; 
+}
+
+#storeLocations ul {
+  text-align: center; 
+}
+
+/* Page Header for each page */
+
+.farrellPageHeader {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #000;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.panel-body {
+  padding-top: 0;
+}
+
+.panel-body {
+  margin-bottom: 2em;
+}
+
+/* Social Media Bar */
+
+@media screen {
+  
+  #social-media {
+    position: relative;
+    top: 0;
+    margin-left: 20px;
+  }
+  
+  #social-media ul {
+    list-style: none;
+  }
+  
+  #social-media ul li {
+    display: inline;
+  }
+  
+  #social-media ul li img {
+    position: relative;
+    top: -0.9em;
+    border-radius: 10px;
+  }
+  
+  #social-media ul li:nth-child(1) {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    top: -0.6em;
+  }
+  
+  #social-media .fa-search {
+    color: #fff;
+    position: relative;
+    top: 0.13em;
+    left: 5px;
+  }
+  
+  #social-media a {
+    text-decoration: none;
+  }
+  
+  #social-media a:visited {
+    text-decoration: none;
+  }
+  
+  #social-media a:hover {
+    text-decoration: none;
+    transform: scale(1.5);
+  }
+
+  #social-media .fa-facebook-square {
+    color: #3B5998;
+  }
+
+  #social-media .fa-twitter-square {
+    color: #55ACEE;
+  }
+
+  #social-media .fa-youtube-square {
+    color: #E52D27;
+  }
+  
+  /* SEARCH BAR */
+  #cse {
+    display: none;
+  }
+
+  .cse {
+    display: block;
+  }
+
+/* END SEARCH BAR */
+}
+
+@media (min-width: 768px) {
+  #social-media ul {
+    position: fixed;
+    left: 0%;
+    bottom: 5em;
+    z-index: 10;
+  }
+  
+  #social-media ul li {
+    display: block;
+  }
+  
+  #social-media ul li img {
+    position: relative;
+    top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* Footer outside the div.container */
+
+footer {
+  width: 100%;
+  clear: both;
+}
+
+#footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footer p span {
+  float: right;
+}
+
+@media (max-width: 798px) {
+  #footer p {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+/* beveled edges */
+.beveled {
+  background: #bbb;
+  display: block;
+  border-radius: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.bevel {
+  box-shadow: 0 -30px 50px #fff inset, 0 0 15px #111 inset;
+  border: 15px solid #006B50;
+}
+
+.main-paragraph {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.875em 3.125em 1.875em;
+  max-width: 69em;
+  padding-top: 2em;
+}
+
+.main-paragraph2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 2em 0em 2em;
+  max-width: 69em;
+  padding-top: .5em;
+}
+
+/* Links Made Buttons */
+.button a {
+  text-decoration: none;
+  padding: 10px;
+  line-height: 3;
+  border: 1px solid rgba(192, 192, 192, 1);
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.button a:link {
+  text-decoration: none;
+  background: #888;
+  color: #fff;
+}
+
+.button a:hover {
+  text-decoration: none;
+  background: #ccc;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.button a:visited {
+  text-decoration: none;
+  background: #888;
+  color: #fff;
+}
+
+.button a:hover {
+  color: #000;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #000;
+}
+
+
+
+
+
+
+

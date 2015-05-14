@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farrell Equipment - Rentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../fonts/favicon.ico"> 
+    <link href="css/elastislide.css" rel="stylesheet">
+    <link href="css/rental.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    <script src="js/modernizr.js"></script>
+    <noscript>
+     <style>
+      .es-carousel ul {
+        display:block;
+      }
+     </style>
+    </noscript>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+     <div class="rg-image-wrapper">
+      {{if itemsCount > 1}}
+       <div class="rg-image-nav">
+        <a href="#" class="rg-image-nav-prev">Previous Image</a>
+        <a href="#" class="rg-image-nav-next">Next Image</a>
+       </div>
+      {{/if}}
+      <div class="rg-image"></div>
+      <div class="rg-loading"></div>
+      <div class="rg-caption-wrapper">
+       <div class="rg-caption" style="display:none;">
+        <p></p>
+       </div>
+      </div>
+     </div>
+    </script>
+    <!-- GOOGLE CSE -->
+    <script src='//www.google.com/jsapi' type='text/javascript'></script>
+    <script type='text/javascript'>
+      google.load('search', '1', {language: 'en', style: google.loader.themes.MINIMALIST});
+      google.setOnLoadCallback(function() {
+        var customSearchOptions = {};
+        var orderByOptions = {};
+        orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+        customSearchOptions['enableOrderBy'] = true;
+        customSearchOptions['orderByOptions'] = orderByOptions;
+        var imageSearchOptions = {};
+        imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+        customSearchOptions['enableImageSearch'] = true;
+        customSearchOptions['overlayResults'] = true;
+        var customSearchControl =   new google.search.CustomSearchControl('006364709504491078392:pi4jyhba8ow', customSearchOptions);
+        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        var options = new google.search.DrawOptions();
+        options.setAutoComplete(true);
+        customSearchControl.draw('cse', options);
+      }, true);
+    </script>
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-62669317-1', 'auto');
+      ga('send', 'pageview');
+    </script>  
+  </head>
+  <body>
+    <div id="rentalWrapper">
+      <h1 class="farrellCompanyHeader"><a href="index.html"><img src="images/logos/farrellLogo.png"></a><span>Equipment &amp; Supply Co., Inc.</span></h1>
+      
+      <!-- SOCIAL MEDIA -->
+      <div id="social-media">
+        <ul>
+          <li><a target="_self" href="#" id="search" class="fa fa-search fa-2x"></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/FarrellEquipment" class="fa fa-facebook-square fa-3x"></a></li>
+          <li><a target="_blank" href="https://twitter.com/FarrellEquip?lang=en" class="fa fa-twitter-square fa-3x"></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCEnbWFYzwSGmKJv9bOAsk4A" class="fa fa-youtube-square fa-3x"></a></li>
+        </ul>
+      </div>
+      
+      <div id="navMenu">
+        <div id="menuWrapper">
+          <ul id="menuPosition">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a>
+              <ul>
+                <li class="dropDownItem"><a href="aboutProducts.html">About Our Products</a></li>
+                <li class="dropDownItem"><a href="manufacturersList.html">Manufacturers List</a></li>
+                <li class="dropDownItem"><a href="rentals.html">Rental Company</a></li>
+                <li class="dropDownItem"><a href="catalog.html">Catalogs</a></li>
+                <li class="dropDownItem"><a href="msdsProductData.html">MSDS &amp; Product Data</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Events</a>
+              <ul>
+                <li class="dropDownItem"><a href="calendarEvents.html">Calendar of Events</a></li>
+                <li class="dropDownItem"><a href="productSalesShow.html">Product Sales Show</a></li>
+                <li class="dropDownItem"><a href="classes.html">Classes</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Forms &amp; Applications</a>
+              <ul>
+                <li class="dropDownItem"><a href="creditApp.html">Credit Application</a></li>
+                <li class="dropDownItem"><a href="rentalApp.html">Rental Application</a></li>
+                <li class="dropDownItem"><a href="taxExemptForm.html">Tax Exemption Forms</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Us</a>
+              <ul>
+                <li class="dropDownItem"><a href="locationHours.html">Location &amp; Hours</a></li>
+                <li class="dropDownItem"><a href="aboutUs.html">About Us</a></li>
+                <li class="dropDownItem"><a href="jobOpp.html">Job Opportunities</a></li>
+                <li class="dropDownItem"><a href="javascript:void( window.open('contactForm.html', 'blank','scrollbars=yes,toolbar=no,width=700,height=600'))">Contact Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <br class="clearFloat" />
+      </div><!-- end of nav menu -->
+    </div><!-- end of rentalWrapper -->
+    
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+          <ul class="dl-submenu">
+            <li>
+              <a href="aboutProducts.html">About Our Products</a>
+            </li>
+            <li>
+              <a href="manufacturersList.html">Manufacturers List</a>
+            </li>
+            <li>
+              <a href="rentals.html">Rental Company</a>
+            </li>
+            <li>
+              <a href="catalog.html">Catalogs</a>
+            </li>
+            <li>
+              <a href="msdsProductData.html">MSDS &amp; Product Data</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Events</a>
+          <ul class="dl-submenu">
+            <li>
+              <a href="calendarEvents.html">Calendar of Events</a>
+            </li>
+            <li>
+              <a href="productSalesShow.html">Product Sales Show</a>
+            </li>
+            <li>
+              <a href="classes.html">Classes &amp; Seminars</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Forms &amp; Applications</a>
+          <ul class="dl-submenu">
+            <li>
+              <a href="creditApp.html">Credit Application</a>
+            </li>
+            <li>
+              <a href="rentalApp.html">Rental Application</a>
+            </li>
+            <li>
+              <a href="taxExemptForm.html">Tax Exemption Forms</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+          <ul class="dl-submenu">
+            <li>
+              <a href="locationHours.html">Location &amp; Hours</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">About Us</a>
+            </li>
+            <li>
+              <a href="jobOpp.html">Job Opportunities</a>
+            </li>
+          <li>
+          <a href="javascript:void( window.open('contactForm.html', 'blank','scrollbars=yes,toolbar=no,width=700,height=600'))">Contact Form</a>
+          </li>
+          </ul>
+        </li>
+      </ul>
+   </div><!-- /dl-menuwrapper --><br>
+    
+    <!-- SEARCH BAR -->
+    <div id='cse' style='width: 100%;'>Loading</div>
+    
+    <div id="rentalHeader">
+      <h1>Farrell Rental Company <span>We rent what we sell</span></h1>
+    </div>
+    
+    <div class="container">
+      <div id="rental-paragraph" class="bevel beveled main-paragraph">
+        <p>At <strong>Farrell Equipment</strong>, our slogan “We rent what we sell” is just that. If the equipment you want is not being shown below, do not worry, just give us a call at <strong>(715) 835 4334.</strong> This is determined on a case by case basis.  Remember, at Farrell,<strong> we are here for you.</strong></p>
+      </div>
+      <div id="rentalContent">
+        <div id="rg-gallery" class="rg-gallery">
+          <div class="rg-thumbs">
+          <!-- Elastislide Carousel Thumbnail Viewer -->
+            <div class="es-carousel-wrapper">
+              <div class="es-nav">
+                <span class="es-nav-prev">Previous</span>
+                <span class="es-nav-next">Next</span>
+              </div>
+              <div class="es-carousel">
+                <ul>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(1).png" data-large="images/rentalPics/rentalBook%20(1).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(2).png" data-large="images/rentalPics/rentalBook%20(2).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(3).png" data-large="images/rentalPics/rentalBook%20(3).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(4).png" data-large="images/rentalPics/rentalBook%20(4).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(5).png" data-large="images/rentalPics/rentalBook%20(5).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(6).png" data-large="images/rentalPics/rentalBook%20(6).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(7).png" data-large="images/rentalPics/rentalBook%20(7).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(8).png" data-large="images/rentalPics/rentalBook%20(8).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(9).png" data-large="images/rentalPics/rentalBook%20(9).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(10).png" data-large="images/rentalPics/rentalBook%20(10).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(11).png" data-large="images/rentalPics/rentalBook%20(11).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(12).png" data-large="images/rentalPics/rentalBook%20(12).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(13).png" data-large="images/rentalPics/rentalBook%20(13).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(14).png" data-large="images/rentalPics/rentalBook%20(14).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(15).png" data-large="images/rentalPics/rentalBook%20(15).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(16).png" data-large="images/rentalPics/rentalBook%20(16).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(17).png" data-large="images/rentalPics/rentalBook%20(17).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(18).png" data-large="images/rentalPics/rentalBook%20(18).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(19).png" data-large="images/rentalPics/rentalBook%20(19).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(20).png" data-large="images/rentalPics/rentalBook%20(20).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(21).png" data-large="images/rentalPics/rentalBook%20(21).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(22).png" data-large="images/rentalPics/rentalBook%20(22).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(23).png" data-large="images/rentalPics/rentalBook%20(23).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(24).png" data-large="images/rentalPics/rentalBook%20(24).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(25).png" data-large="images/rentalPics/rentalBook%20(25).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(26).png" data-large="images/rentalPics/rentalBook%20(26).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(27).png" data-large="images/rentalPics/rentalBook%20(27).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(28).png" data-large="images/rentalPics/rentalBook%20(28).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(29).png" data-large="images/rentalPics/rentalBook%20(29).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(30).png" data-large="images/rentalPics/rentalBook%20(30).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(31).png" data-large="images/rentalPics/rentalBook%20(31).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(32).png" data-large="images/rentalPics/rentalBook%20(32).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(33).png" data-large="images/rentalPics/rentalBook%20(33).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(34).png" data-large="images/rentalPics/rentalBook%20(34).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(35).png" data-large="images/rentalPics/rentalBook%20(35).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(36).png" data-large="images/rentalPics/rentalBook%20(36).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(37).png" data-large="images/rentalPics/rentalBook%20(37).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(38).png" data-large="images/rentalPics/rentalBook%20(38).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(39).png" data-large="images/rentalPics/rentalBook%20(39).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(40).png" data-large="images/rentalPics/rentalBook%20(40).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(41).png" data-large="images/rentalPics/rentalBook%20(41).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(42).png" data-large="images/rentalPics/rentalBook%20(42).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(43).png" data-large="images/rentalPics/rentalBook%20(43).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(44).png" data-large="images/rentalPics/rentalBook%20(44).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(45).png" data-large="images/rentalPics/rentalBook%20(45).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(46).png" data-large="images/rentalPics/rentalBook%20(46).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(47).png" data-large="images/rentalPics/rentalBook%20(47).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(48).png" data-large="images/rentalPics/rentalBook%20(48).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(49).png" data-large="images/rentalPics/rentalBook%20(49).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(50).png" data-large="images/rentalPics/rentalBook%20(50).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(51).png" data-large="images/rentalPics/rentalBook%20(51).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(52).png" data-large="images/rentalPics/rentalBook%20(52).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(53).png" data-large="images/rentalPics/rentalBook%20(53).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(54).png" data-large="images/rentalPics/rentalBook%20(54).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(55).png" data-large="images/rentalPics/rentalBook%20(55).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(56).png" data-large="images/rentalPics/rentalBook%20(56).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(57).png" data-large="images/rentalPics/rentalBook%20(57).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(58).png" data-large="images/rentalPics/rentalBook%20(58).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(59).png" data-large="images/rentalPics/rentalBook%20(59).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(60).png" data-large="images/rentalPics/rentalBook%20(60).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(61).png" data-large="images/rentalPics/rentalBook%20(61).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(62).png" data-large="images/rentalPics/rentalBook%20(62).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(63).png" data-large="images/rentalPics/rentalBook%20(63).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(64).png" data-large="images/rentalPics/rentalBook%20(64).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(65).png" data-large="images/rentalPics/rentalBook%20(65).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(66).png" data-large="images/rentalPics/rentalBook%20(66).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(67).png" data-large="images/rentalPics/rentalBook%20(67).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(68).png" data-large="images/rentalPics/rentalBook%20(68).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(69).png" data-large="images/rentalPics/rentalBook%20(69).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(70).png" data-large="images/rentalPics/rentalBook%20(70).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(71).png" data-large="images/rentalPics/rentalBook%20(71).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(72).png" data-large="images/rentalPics/rentalBook%20(72).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(73).png" data-large="images/rentalPics/rentalBook%20(73).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(74).png" data-large="images/rentalPics/rentalBook%20(74).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(75).png" data-large="images/rentalPics/rentalBook%20(75).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(76).png" data-large="images/rentalPics/rentalBook%20(76).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(77).png" data-large="images/rentalPics/rentalBook%20(77).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(78).png" data-large="images/rentalPics/rentalBook%20(78).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(79).png" data-large="images/rentalPics/rentalBook%20(79).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(80).png" data-large="images/rentalPics/rentalBook%20(80).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(81).png" data-large="images/rentalPics/rentalBook%20(81).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(82).png" data-large="images/rentalPics/rentalBook%20(82).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(83).png" data-large="images/rentalPics/rentalBook%20(83).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(84).png" data-large="images/rentalPics/rentalBook%20(84).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(85).png" data-large="images/rentalPics/rentalBook%20(85).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(86).png" data-large="images/rentalPics/rentalBook%20(86).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(87).png" data-large="images/rentalPics/rentalBook%20(87).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(88).png" data-large="images/rentalPics/rentalBook%20(88).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(89).png" data-large="images/rentalPics/rentalBook%20(89).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(90).png" data-large="images/rentalPics/rentalBook%20(90).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(91).png" data-large="images/rentalPics/rentalBook%20(91).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(92).png" data-large="images/rentalPics/rentalBook%20(92).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(93).png" data-large="images/rentalPics/rentalBook%20(93).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(94).png" data-large="images/rentalPics/rentalBook%20(94).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(95).png" data-large="images/rentalPics/rentalBook%20(95).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(96).png" data-large="images/rentalPics/rentalBook%20(96).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(97).png" data-large="images/rentalPics/rentalBook%20(97).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(98).png" data-large="images/rentalPics/rentalBook%20(98).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(99).png" data-large="images/rentalPics/rentalBook%20(99).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(100).png" data-large="images/rentalPics/rentalBook%20(100).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(101).png" data-large="images/rentalPics/rentalBook%20(101).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(102).png" data-large="images/rentalPics/rentalBook%20(102).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(103).png" data-large="images/rentalPics/rentalBook%20(103).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(104).png" data-large="images/rentalPics/rentalBook%20(104).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(105).png" data-large="images/rentalPics/rentalBook%20(105).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(106).png" data-large="images/rentalPics/rentalBook%20(106).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(107).png" data-large="images/rentalPics/rentalBook%20(107).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(108).png" data-large="images/rentalPics/rentalBook%20(108).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(109).png" data-large="images/rentalPics/rentalBook%20(109).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(110).png" data-large="images/rentalPics/rentalBook%20(110).png" alt="image01" /></a></li>>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(111).png" data-large="images/rentalPics/rentalBook%20(111).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(112).png" data-large="images/rentalPics/rentalBook%20(112).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(113).png" data-large="images/rentalPics/rentalBook%20(113).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(114).png" data-large="images/rentalPics/rentalBook%20(114).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(115).png" data-large="images/rentalPics/rentalBook%20(115).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(116).png" data-large="images/rentalPics/rentalBook%20(116).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(117).png" data-large="images/rentalPics/rentalBook%20(117).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(118).png" data-large="images/rentalPics/rentalBook%20(118).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(119).png" data-large="images/rentalPics/rentalBook%20(119).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(120).png" data-large="images/rentalPics/rentalBook%20(120).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(121).png" data-large="images/rentalPics/rentalBook%20(121).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(122).png" data-large="images/rentalPics/rentalBook%20(122).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(123).png" data-large="images/rentalPics/rentalBook%20(123).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(124).png" data-large="images/rentalPics/rentalBook%20(124).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(125).png" data-large="images/rentalPics/rentalBook%20(125).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(126).png" data-large="images/rentalPics/rentalBook%20(126).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(127).png" data-large="images/rentalPics/rentalBook%20(127).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(128).png" data-large="images/rentalPics/rentalBook%20(128).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(129).png" data-large="images/rentalPics/rentalBook%20(129).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(130).png" data-large="images/rentalPics/rentalBook%20(130).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(131).png" data-large="images/rentalPics/rentalBook%20(131).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(132).png" data-large="images/rentalPics/rentalBook%20(132).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(133).png" data-large="images/rentalPics/rentalBook%20(133).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(134).png" data-large="images/rentalPics/rentalBook%20(134).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(135).png" data-large="images/rentalPics/rentalBook%20(135).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(136).png" data-large="images/rentalPics/rentalBook%20(136).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(137).png" data-large="images/rentalPics/rentalBook%20(137).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(138).png" data-large="images/rentalPics/rentalBook%20(138).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(139).png" data-large="images/rentalPics/rentalBook%20(139).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(140).png" data-large="images/rentalPics/rentalBook%20(140).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(141).png" data-large="images/rentalPics/rentalBook%20(141).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(142).png" data-large="images/rentalPics/rentalBook%20(142).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(143).png" data-large="images/rentalPics/rentalBook%20(143).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(144).png" data-large="images/rentalPics/rentalBook%20(144).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(145).png" data-large="images/rentalPics/rentalBook%20(145).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(146).png" data-large="images/rentalPics/rentalBook%20(146).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(147).png" data-large="images/rentalPics/rentalBook%20(147).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(148).png" data-large="images/rentalPics/rentalBook%20(148).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(149).png" data-large="images/rentalPics/rentalBook%20(149).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(150).png" data-large="images/rentalPics/rentalBook%20(150).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(151).png" data-large="images/rentalPics/rentalBook%20(151).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(152).png" data-large="images/rentalPics/rentalBook%20(152).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(153).png" data-large="images/rentalPics/rentalBook%20(153).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(154).png" data-large="images/rentalPics/rentalBook%20(154).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(155).png" data-large="images/rentalPics/rentalBook%20(155).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(156).png" data-large="images/rentalPics/rentalBook%20(156).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(157).png" data-large="images/rentalPics/rentalBook%20(157).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(158).png" data-large="images/rentalPics/rentalBook%20(158).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(159).png" data-large="images/rentalPics/rentalBook%20(159).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(160).png" data-large="images/rentalPics/rentalBook%20(160).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(161).png" data-large="images/rentalPics/rentalBook%20(161).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(162).png" data-large="images/rentalPics/rentalBook%20(162).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(163).png" data-large="images/rentalPics/rentalBook%20(163).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(164).png" data-large="images/rentalPics/rentalBook%20(164).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(165).png" data-large="images/rentalPics/rentalBook%20(165).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(166).png" data-large="images/rentalPics/rentalBook%20(166).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(167).png" data-large="images/rentalPics/rentalBook%20(167).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(168).png" data-large="images/rentalPics/rentalBook%20(168).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(169).png" data-large="images/rentalPics/rentalBook%20(169).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(170).png" data-large="images/rentalPics/rentalBook%20(170).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(171).png" data-large="images/rentalPics/rentalBook%20(171).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(172).png" data-large="images/rentalPics/rentalBook%20(172).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(173).png" data-large="images/rentalPics/rentalBook%20(173).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(174).png" data-large="images/rentalPics/rentalBook%20(174).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(175).png" data-large="images/rentalPics/rentalBook%20(175).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(176).png" data-large="images/rentalPics/rentalBook%20(176).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(177).png" data-large="images/rentalPics/rentalBook%20(177).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(178).png" data-large="images/rentalPics/rentalBook%20(178).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(179).png" data-large="images/rentalPics/rentalBook%20(179).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(180).png" data-large="images/rentalPics/rentalBook%20(180).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(181).png" data-large="images/rentalPics/rentalBook%20(181).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(182).png" data-large="images/rentalPics/rentalBook%20(182).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(183).png" data-large="images/rentalPics/rentalBook%20(183).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(184).png" data-large="images/rentalPics/rentalBook%20(184).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(185).png" data-large="images/rentalPics/rentalBook%20(185).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(186).png" data-large="images/rentalPics/rentalBook%20(186).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(187).png" data-large="images/rentalPics/rentalBook%20(187).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(188).png" data-large="images/rentalPics/rentalBook%20(188).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(189).png" data-large="images/rentalPics/rentalBook%20(189).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(190).png" data-large="images/rentalPics/rentalBook%20(190).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(191).png" data-large="images/rentalPics/rentalBook%20(191).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(192).png" data-large="images/rentalPics/rentalBook%20(192).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(193).png" data-large="images/rentalPics/rentalBook%20(193).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(194).png" data-large="images/rentalPics/rentalBook%20(194).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(195).png" data-large="images/rentalPics/rentalBook%20(195).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(196).png" data-large="images/rentalPics/rentalBook%20(196).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(197).png" data-large="images/rentalPics/rentalBook%20(197).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(198).png" data-large="images/rentalPics/rentalBook%20(198).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(199).png" data-large="images/rentalPics/rentalBook%20(199).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(200).png" data-large="images/rentalPics/rentalBook%20(200).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(201).png" data-large="images/rentalPics/rentalBook%20(201).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(202).png" data-large="images/rentalPics/rentalBook%20(202).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(203).png" data-large="images/rentalPics/rentalBook%20(203).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(204).png" data-large="images/rentalPics/rentalBook%20(204).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(205).png" data-large="images/rentalPics/rentalBook%20(205).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(206).png" data-large="images/rentalPics/rentalBook%20(206).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(207).png" data-large="images/rentalPics/rentalBook%20(207).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(208).png" data-large="images/rentalPics/rentalBook%20(208).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(209).png" data-large="images/rentalPics/rentalBook%20(209).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(210).png" data-large="images/rentalPics/rentalBook%20(210).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(211).png" data-large="images/rentalPics/rentalBook%20(211).png" alt="image01" /></a></li>
+                  <li><a href="#"><img src="images/rentalPics/rentalBook%20(212).png" data-large="images/rentalPics/rentalBook%20(212).png" alt="image01" /></a></li>
+                </ul>
+              </div>
+            </div>
+          <!-- End Elastislide Carousel Thumbnail Viewer -->
+          </div><!-- rg-thumbs -->
+        </div><!-- rg-gallery -->
+        
+        <div id="rentalCatalog">
+          <p><span><span>We <span>rent</span> what we sell!</span><br> Need <span>To</span> rent? take a <span>Closer</span> <span>Look</span> at the rental catalog.</span></p>
+          <a target="_blank" href="docs/rentalBook(2014-11.3).pdf">
+            <img src="images/catalogs/rentalPageBookCover.png">
+          </a>
+          <p><span><span>Need <span>to</span> make mind <span>blowing</span> decorative concrete?</span><br> Take a peak inside our catalog.</span></p>
+          <a target="_blank" href="docs/concreteStampsRental(2014-14.3).pdf">
+            <img src="images/catalogs/rentalPageDecorativeConcreteCover.png">
+          </a>
+        </div>
+        
+        <div id="rentalPolicyContainer">
+          <h2>Rental Policies</h2>
+          <p>This is a brief overview of legal terms, conditions and other important information. A complete version is on the reverse side of the rental agreement. In all cases, the rental contract is the final and binding agreement.</p>
+          
+          <p>For safety reasons, only qualified operators may use Farrell Rental equipment.</p>
+          <p>Payment terms are net 30 with an established account. Without an established account payment must be paid before taking rental item. Payment can be made with checks, American Express, MasterCard, Visa or Discover. A valid credit card is required as collateral for all rentals (no debit or check cards please). </p>
+          <p>Certificate of insurance is required to rent some items. Farrell Equipment &amp; Supply Co., Inc. must be named as "loss payee and additional insured."</p>
+          <p>Rental charges begin when equipment leaves our yard (or arrives at your job if delivered) and ends when it is returned. Rent will be charged for all time out described.</p>
+          <p>Delivery and pickup are offered but not included in the published rental rates. Pickups will not be made until we receive a phone call that your use of the equipment is completed. Have equipment in an accessible location to eliminate damage to your property and our equipment.</p>
+          
+          
+          <h2>Delivery &amp; Pickup is available at a charge of $85.00 per hour</h2>
+          <p>Rental rates are based on the following: one day is 24 hours, one week is 7 consecutive days and one month is 28 consecutive days. Holiday rate is a 2 day rental charge with rental running from Friday night to Tuesday morning. Weekend rate from Friday night to Monday morning is a 1-1/2 day rate.</p>
+          <p>Double or triple shift charges apply if you use the equipment in excess of 8 hours a day, 40 hours a week or 160 hours a month. Two-shift operation will be charged 1.5 times the published rate and three-shift operation will be charged 2 times the published rate.</p>
+          <p>Renter is always responsible for theft, vandalism, flat tires, negligence, abuse, misuse, routine maintenance, fuel and cleaning charges necessary to return equipment to the same condition as the beginning of the rental.</p>
+          <p>Damage beyond normal wear and tear is the responsibility of the renter and we will repair the equipment and charge the renter for all parts and labor required to return the equipment to proper operating condition. Please refer to your contract for details.</p>
+          <p>If you have a problem with the equipment, contact Farrell Equipment & Supply Co., Inc. immediately. We will replace or repair the equipment at our discretion, as soon as manpower and/or equipment availability allows.</p>
+          <p>Long term and high volume renters may qualify for discounts. Please call for special quotes.</p>
+          <p>Rental satisfaction guarantee: Farrell Equipment &amp; Supply Co., Inc. guarantees our customers complete satisfaction with the performance of any piece of equipment rented from us. If any piece of equipment fails to perform as designed, contact us and a mutually agreed upon adjustment can be made in the rental charges</p>
+          
+          <h2>All rentals must be returned clean or a clean-up charge of $65 per hour will be applied.</h2>
+          <p>All specifications, pricing and offers outlined are subject to change without notice.</p>
+          
+          <p>Farrell Equipment Rental, Inc. - Trade Customs</p>
+          <p>The compilation and checking of a general catalog of supplies and machinery is complicated, involving many thousands of product numbers, dimensions, etc. and absolute perfection is not a commercial possibility. Every endeavor has been made to have the latest lists, dimensions, descriptions and designs throughout this catalog, but we do not guarantee accuracy. If any errors or misprints have escaped our checkers and printers, we are not responsible for them, and they are subject to our correction. All information contained in this catalog, pertaining to strengths and proper working loads of material, tools or machines is derived from information compiled by the manufacturers for the convenience of the buyer. We assume no responsibility for the accuracy of this information.</p>
+          <p>Our rental fleet is constantly changing. Designs, specifications and accessories are subject to change without notice.</p>
+          <p>Illustrations are subject to modification. All references in this catalog are for description only and are not representations or warranties of any kind or nature.</p>
+          <p>Illustrations are subject to modification. All references in this catalog are for description only and are not representations or warranties of any kind or nature.</p>
+          
+          <h2>Farrell Equipment Rental, Inc. - Trade Customs</h2>
+          <p>The compilation and checking of a general catalog of supplies and machinery is complicated, involving many thousands of product numbers, dimensions, etc. and absolute perfection is not a commercial possibility. Every endeavor has been made to have the latest lists, dimensions, descriptions and designs throughout this catalog, but we do not guarantee accuracy. If any errors or misprints have escaped our checkers and printers, we are not responsible for them, and they are subject to our correction. All information contained in this catalog, pertaining to strengths and proper working loads of material, tools or machines is derived from information compiled by the manufacturers for the convenience of the buyer. We assume no responsibility for the accuracy of this information.</p>
+          
+          <h2>Our rental fleet is constantly changing, Designs, specifications and accessories are subject to change without notice.</h2>
+          <p>Illustrations are subject to modification. All references on this website &amp; catalogs are for description only and are not representations or warranties of any kind or nature.</p>
+        </div>
+        
+         
+      </div><!-- content -->
+    </div><!-- container -->
+    
+    <div id="storeBarContainer">
+      <div id="storeLocations">
+        <div id="firstGroup">
+          <a href="locationHours.html">
+            <h2>Eau Claire</h2>
+            <ul class="list-unstyled">
+              <img src="images/storePic/150223ecbuilding-sm.jpg">
+              <li>(715) 835-4334</li>
+              <li>(800) 533-0909</li>
+              <li>Fax: (715) 835-4356</li>
+              <li>1510 N. Hastings Way</li>
+              <li>Eau Claire, WI 54703</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>Appleton</h2>
+            <ul>
+              <img src="images/storePic/150223appletonPic-sm.png">
+              <li>(920) 903-1985</li>
+              <li>(800) 533-0909</li>
+              <li>Fax: (920) 903-8278</li>
+              <li>1002 Truman Street</li>
+              <li>Kimberly, WI 54136</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>La Crosse</h2>
+            <ul>
+              <img src="images/storePic/150223laxbuilding-sm.jpg">
+              <li>(608) 796-9300</li>
+              <li>(888) 533-0909</li>
+              <li>Fax: (608) 796-9435</li>
+              <li>508 Monitor Street</li>
+              <li>La Crosse, WI 54603</li>
+            </ul>
+          </a>
+        </div>
+        
+        <div id="secondGroup">
+          <a href="locationHours.html">
+            <h2>Madison</h2>
+            <ul>
+              <img src="images/storePic/150223MadisonStore2014-sm.jpg">
+              <li>(608) 222-5372</li>
+              <li>(888) 533-7909</li>
+              <li>Fax: (608) 222-5405</li>
+              <li>6809 Mangrove Lane</li>
+              <li>Monona, WI 53713</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>Rochester</h2>
+            <ul>
+              <img src="images/storePic/150224rochesterPic2-sm.png">
+              <li>(507) 252-0234</li>
+              <li>(888) 533-8909</li>
+              <li>Fax: (507) 252-0222</li>
+              <li>1635 3rd Avenue S.E.</li>
+              <li>Rochester, MN 55904</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>Wausau</h2>
+            <ul>
+              <img src="images/storePic/150223wausaubuilding-sm.jpg">
+              <li>(715) 355-8300</li>
+              <li>(800) 933-5939</li>
+              <li>Fax: (715) 298-1662</li>
+              <li>7405 Commerce Drive</li>
+              <li>Weston, WI 54476</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <div id="footer">
+        <p>Copyright &copy; Farrell Equipment &amp; Supply Co., Inc 2015 <span>All Rights Reserved</span></p>
+      </div>
+    </footer>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mobileDropMenu.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/rentals.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.elastislide.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/search-bar.js"></script>
+  </body>
+</html>

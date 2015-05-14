@@ -1,0 +1,37 @@
+.alphabet {
+  font-size: 2em;
+}
+
+#alphabetBottom {
+  margin-bottom: 2em;
+}
+
+/* back to the top button */
+
+.top {
+  list-style: none;
+}
+
+.top a {
+  color: #000;
+  text-decoration: none;
+}
+
+.top a:vistited {
+  color: #000;
+  text-decoration: none;
+}
+
+.top a:active {
+  text-decoration: none;
+  color: #006B50;
+}
+
+.top a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.farrellPageHeader {
+  margin: 1em;
+}

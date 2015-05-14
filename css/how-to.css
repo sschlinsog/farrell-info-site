@@ -1,0 +1,405 @@
+.accordion {
+  display: none;
+}
+
+#mobile-accordion {
+  width: 100%;
+  margin: 10px auto 30px auto;
+  text-align: left;
+}
+
+#mobile-accordion label {
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 40px;
+  cursor: pointer;
+  color: #777;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  line-height: 33px;
+  font-size: 19px;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+  background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+  box-shadow: 
+  0px 0px 0px 1px rgba(155,155,155,0.3), 
+  1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+  0px 2px 2px rgba(0,0,0,0.1);
+}
+
+#mobile-accordion label:hover{
+  background: #fff;
+}
+
+/* GIVES THE HEADER A COLOR WHEN IT IS CHECKED/OPENED */
+#mobile-accordion input:checked + label,
+#mobile-accordion input:checked + label:hover{
+  background: #006B50;
+  color: #000;
+  text-shadow: 0.5px 1px 0px rgba(255,255,255, 0.8);
+  box-shadow: 
+  0px 0px 0px 1px rgba(155,155,155,0.3), 
+  0px 2px 2px rgba(0,0,0,0.1);
+}
+
+#mobile-accordion label:hover:after,
+#mobile-accordion input:checked + label:hover:after{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+  background: transparent url(../images/arrow_down.png) no-repeat center center;	
+}
+
+/* GIVES THE ARROW UP ON A CHECKED/OPEN HEADER WHEN IT IS HOVERED OVER */
+#mobile-accordion input:checked + label:hover:after{
+  background-image: url(../images/arrow_up.png);
+}
+
+/* HIDES THE CHECK BOX */
+#mobile-accordion input{
+  display: none;
+}
+
+/* STYLES FOR THE DROP DOWN CONTENT */
+#mobile-accordion article{
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+/* STYLES FOR THE DROP DOWN CONTENT PARAGRAPH */
+#mobile-accordion article p {
+	font-style: italic;
+	color: #777;
+	line-height: 23px;
+	font-size: 14px;
+	padding: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+
+#mobile-accordion input:checked ~ article{
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+/* HEIGHTS FOR THE DROP DOWN CONTENT BOX !IMPORTANT TO THE ACCORDION TO SHOW CONTENT */
+#mobile-accordion input:checked ~ article.accordion-lrg {
+  height: 100px;
+}
+
+#content-header h1 {
+  font-size: 200%;
+}
+
+@media (min-width: 500px) {
+  #content-header h1 {
+    font-size: 250%;
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ACCORDION CONTAINER FOR WIDTH */
+  .accordion {
+    display: block;
+    width: 100%;
+    margin: 10px auto 30px auto;
+    text-align: left;
+  }
+  
+  /* HIDE THE mobile-accordion VERSION */
+  #mobile-accordion {
+    display: none;
+  }
+
+  /* STYLING OF THE ACCORDION HEADERS */
+  .accordion label {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 33px;
+    font-size: 19px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+    background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+    box-shadow: 
+    0px 0px 0px 1px rgba(155,155,155,0.3), 
+    1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+    0px 2px 2px rgba(0,0,0,0.1);
+  }
+
+  /* SIMPLE WHITE HOVER EFFECT */
+  .accordion label:hover{
+    background: #fff;
+  }
+
+  /* GIVES THE HEADER A COLOR WHEN IT IS CHECKED/OPENED */
+  .accordion input:checked + label,
+  .accordion input:checked + label:hover{
+    background: #006B50;
+    color: #000;
+    text-shadow: 0.5px 1px 0px rgba(255,255,255, 0.8);
+    box-shadow: 
+    0px 0px 0px 1px rgba(155,155,155,0.3), 
+    0px 2px 2px rgba(0,0,0,0.1);
+  }
+
+  /* GIVES THE ARROW DOWN WHEN HEADER IS HOVERED */
+  .accordion label:hover:after,
+  .accordion input:checked + label:hover:after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;	
+  }
+
+  /* GIVES THE ARROW UP ON A CHECKED/OPEN HEADER WHEN IT IS HOVERED OVER */
+  .accordion input:checked + label:hover:after{
+    background-image: url(../images/arrow_up.png);
+  }
+
+  /* HIDES THE CHECK BOX */
+  .accordion input{
+    display: none;
+  }
+
+  /* STYLES FOR THE DROP DOWN CONTENT */
+  .accordion article{
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  }
+
+
+  .accordion input:checked ~ article{
+    -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+  }
+
+  /* HEIGHTS FOR THE DROP DOWN CONTENT BOX !IMPORTANT TO THE ACCORDION TO SHOW CONTENT */
+  .accordion input:checked ~ article.accordion-lrg {
+    height: 500px;
+  }
+  
+  .accordion-lrg object {
+    width: 750px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  #container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-section {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* ACCORDION CONTAINER FOR WIDTH */
+  .accordion{
+    width: 800px;
+    margin: 10px auto 30px auto;
+    text-align: left;
+  }
+
+  /* STYLING OF THE ACCORDION HEADERS */
+  .accordion label{
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 33px;
+    font-size: 19px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+    background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+    box-shadow: 
+    0px 0px 0px 1px rgba(155,155,155,0.3), 
+    1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+    0px 2px 2px rgba(0,0,0,0.1);
+  }
+
+  /* SIMPLE WHITE HOVER EFFECT */
+  .accordion label:hover{
+    background: #fff;
+  }
+
+  /* GIVES THE HEADER A COLOR WHEN IT IS CHECKED/OPENED */
+  .accordion input:checked + label,
+  .accordion input:checked + label:hover{
+    background: #006B50;
+    color: #000;
+    text-shadow: 0.5px 1px 0px rgba(255,255,255, 0.8);
+    box-shadow: 
+    0px 0px 0px 1px rgba(155,155,155,0.3), 
+    0px 2px 2px rgba(0,0,0,0.1);
+  }
+
+  /* GIVES THE ARROW DOWN WHEN HEADER IS HOVERED */
+  .accordion label:hover:after,
+  .accordion input:checked + label:hover:after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;	
+  }
+
+  /* GIVES THE ARROW UP ON A CHECKED/OPEN HEADER WHEN IT IS HOVERED OVER */
+  .accordion input:checked + label:hover:after{
+    background-image: url(../images/arrow_up.png);
+  }
+
+  /* HIDES THE CHECK BOX */
+  .accordion input{
+    display: none;
+  }
+
+  /* STYLES FOR THE DROP DOWN CONTENT */
+  .accordion article{
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  }
+
+
+  .accordion input:checked ~ article{
+    -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+  }
+
+  /* HEIGHTS FOR THE DROP DOWN CONTENT BOX !IMPORTANT TO THE ACCORDION TO SHOW CONTENT */
+  .accordion input:checked ~ article.accordion-lrg {
+    height: 600px;
+  }
+
+  .accordion-lrg object {
+    width: 800px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-section {
+    width: 62%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

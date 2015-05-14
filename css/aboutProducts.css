@@ -1,0 +1,141 @@
+@media (max-width: 325px) {
+  .farrellCompanyHeader img {
+    width: 100%;
+  }
+}
+
+#container {
+  width: 100%;
+  padding: 0;
+}
+
+#accordion {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#accordion li div {
+  border: 12px solid #000;
+  -moz-border-image: -moz-linear-gradient(top, #006B50 0%, #000 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #006B50 0%, #000 100%);
+  border-image: linear-gradient(to bottom, #006B50 0%, #000 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+}
+
+#accordion li h4 {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#accordion li:nth-child(4) h4, #accordion li:nth-child(9) h4, #accordion li:nth-child(8) h4, #accordion li:nth-child(13) h4, #accordion li:nth-child(14) h4 {
+  margin-top: -30px;
+}
+
+#accordion li {
+  width: 275px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 7em;
+}
+
+#accordion li ul li {
+  margin: 0;
+  width: 100%;
+}
+
+#accordion ul {
+  display: none;
+  width: 275px;
+  position: absolute;
+  background: #999;
+  z-index: 999;
+}
+
+@media (max-width: 375px) {
+  #accordion li {
+    width: 100%;
+  }
+  
+  #accordion ul {
+    width: 75%;
+  }
+}
+
+#accordion div img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  width: 100%;
+}
+
+
+
+#accordion ul li {
+  list-style: none;
+  font-size: 1.5em;
+  text-align: center;
+  width: 90%;
+  display: block;
+}
+
+#accordion li ul li:hover {
+  background: #ccc;
+  color: #000;
+}
+
+#accordion li ul li:hover a {
+  color: #000;
+}
+
+#accordion a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#accordion a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#accordion a:hover {
+  text-decoration: none;
+}
+
+
+/* Bloack2 */
+#block2 {
+  position: relative;
+  top: 5em;
+  clear: both;
+}
+
+/* Override footer for Products Page */
+
+footer {
+  position: relative;
+  top: -3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

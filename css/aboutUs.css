@@ -1,0 +1,65 @@
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  text-align: center;
+}
+
+#mission-statement {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#associations {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#associations ul {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#associations ul li img {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  #associations ul li img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #header {
+    text-align: center;
+  }
+
+  #associations {
+    width: 100%;
+  }
+  
+  #associations h3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #associations ul {
+    list-style: none;
+  }
+
+  #associations ul li {
+    float: left;
+  }
+
+  #associations ul li img {
+    width: 100%;
+  }
+
+  #associations ul li {
+    width: 20%
+  } 
+}

@@ -1,0 +1,38 @@
+.beveled {
+  background: #bbb;
+  display: block;
+  border-radius: 30px;
+  margin: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.bevel {
+  box-shadow: 0 -30px 50px #fff inset, 0 0 15px #111 inset;
+  border: 15px solid #006B50;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.jobOpenings {
+  border: 1px solid rgba(192, 192, 192, 0.7);
+  display: block;
+  height: 13em;
+}
+
+#jobPostingCenter {
+  margin-left: 8%;
+}
+
+@media (max-width: 991px) {
+  #jobPostingCenter {
+    margin-left: 0%;
+  }
+}
+
+.jobOpeningStore {
+  color: #000;
+  font-size: 1.7em;
+}
