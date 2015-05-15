@@ -11,27 +11,6 @@
     <link href="css/bootstrapSlider.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <script src="js/modernizr.js"></script>
-    <!-- GOOGLE CSE -->
-    <script src='//www.google.com/jsapi' type='text/javascript'></script>
-    <script type='text/javascript'>
-      google.load('search', '1', {language: 'en', style: google.loader.themes.MINIMALIST});
-      google.setOnLoadCallback(function() {
-        var customSearchOptions = {};
-        var orderByOptions = {};
-        orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
-        customSearchOptions['enableOrderBy'] = true;
-        customSearchOptions['orderByOptions'] = orderByOptions;
-        var imageSearchOptions = {};
-        imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
-        customSearchOptions['enableImageSearch'] = true;
-        customSearchOptions['overlayResults'] = true;
-        var customSearchControl =   new google.search.CustomSearchControl('006364709504491078392:pi4jyhba8ow', customSearchOptions);
-        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-        var options = new google.search.DrawOptions();
-        options.setAutoComplete(true);
-        customSearchControl.draw('cse', options);
-      }, true);
-    </script>
     <!-- GOOGLE ANALYTICS -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -747,6 +726,29 @@
         <p>Copyright &copy; Farrell Equipment &amp; Supply Co., Inc 2015 <span>All Rights Reserved</span></p>
       </div>
     </footer>
+    
+    <!-- GOOGLE CSE -->
+    <script src='//www.google.com/jsapi' type='text/javascript'></script>
+    <script type='text/javascript'>
+      google.load('search', '1', {language: 'en', style: google.loader.themes.MINIMALIST});
+      google.setOnLoadCallback(function() {
+        var customSearchOptions = {};
+        var orderByOptions = {};
+        orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+        customSearchOptions['enableOrderBy'] = true;
+        customSearchOptions['orderByOptions'] = orderByOptions;
+        var imageSearchOptions = {};
+        imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+        customSearchOptions['enableImageSearch'] = true;
+        customSearchOptions['overlayResults'] = true;
+        var customSearchControl =   new google.search.CustomSearchControl('006364709504491078392:pi4jyhba8ow', customSearchOptions);
+        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        var options = new google.search.DrawOptions();
+        options.setAutoComplete(true);
+        customSearchControl.draw('cse', options);
+      }, true);
+    </script>
+    
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mobileDropMenu.js"></script>
