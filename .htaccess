@@ -1,0 +1,82 @@
+# generated .htaccess file for public_html
+# msjogren 20150113
+
+
+# CACHE FARRELLEQUIPMENT.COM
+# AUTHOR SSCHLINSOG@FARRCOMPANY.COM
+
+<ifModule mod_headers.c>
+# Turn on Expires and set default expires to 3 days
+ExpiresActive On
+ExpiresDefault A259200
+ 
+# Set up caching on media files for 1 month
+<filesMatch ".(ico|gif|jpg|jpeg|png|flv|pdf|swf|mov|mp3|wmv|ppt)$">
+ExpiresDefault A86400
+Header append Cache-Control "public, must-revalidate"
+</filesMatch>
+ 
+# Set up 2 Hour caching on commonly updated files
+<filesMatch ".(xml|txt|html|js|css)$">
+ExpiresDefault A7200
+Header append Cache-Control "private, must-revalidate"
+</filesMatch>
+ 
+# Force no caching for dynamic files
+<filesMatch ".(php|cgi|pl|htm)$">
+ExpiresDefault A0
+Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+Header set Pragma "no-cache"
+</filesMatch>
+</ifModule>
+
+# END CACHE FARRELLEQUIPMENT.COM
+
+
+#Client Request Errors
+
+#Bad Request
+ErrorDocument 400 /400.shtml
+#Authorization Required
+ErrorDocument 401 /401.shtml
+
+#Forbidden
+ErrorDocument 403 /403.shtml
+#Not Found
+ErrorDocument 404 /404.shtml
+#Method Not Allowed
+ErrorDocument 405 /405.shtml
+#Not Acceptable (encoding)
+ErrorDocument 406 /406.shtml
+#Proxy Authentication Required
+ErrorDocument 407 /407.shtml
+#Request Timed Out
+ErrorDocument 408 /408.shtml
+#Conflicting Request
+ErrorDocument 409 /409.shtml
+#Gone
+ErrorDocument 410 /410.shtml
+#Content Length Required
+ErrorDocument 411 /411.shtml
+#Precondition Failed
+ErrorDocument 412 /412.shtml
+#Request Entity Too Long
+ErrorDocument 413 /413.shtml
+#Request URI Too Long
+ErrorDocument 414 /414.shtml
+#Unsupported Media Type
+ErrorDocument 415 /415.shtml
+
+# Server Errors
+#Internal Server Error
+ErrorDocument 500 /500.shtml
+#Not Implemented
+ErrorDocument 501 /501.shtml
+#Bad Gateway
+ErrorDocument 502 /502.shtml
+#Service Unavailable
+ErrorDocument 503 /503.shtml
+#Gateway Timeout
+ErrorDocument 504 /504.shtml
+#HTTP Version Not Supported
+ErrorDocument 505 /505.shtml
