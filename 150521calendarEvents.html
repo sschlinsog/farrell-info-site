@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farrell Equipment - Calendar of Events</title>
+    <meta charset="utf-8">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/calendarEvents.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+	   <script src="js/modernizr.js"></script>
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-62669317-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <img id="bodyImage" src="images/background/trainingMiakita.png" alt="Background Makita Demostration">
+    <div id="wrapper">
+      <h1 class="farrellCompanyHeader"><a href="index.html"><img src="images/logos/farrellLogo.png" alt="Farrell Logo"></a><span>Equipment &amp; Supply Co., Inc.</span></h1>
+      
+      <!-- SOCIAL MEDIA -->
+      <div id="social-media">
+        <ul>
+          <li><a target="_self" href="#" id="search" class="fa fa-search fa-2x"></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/FarrellEquipment" class="fa fa-facebook-square fa-3x"></a></li>
+          <li><a target="_blank" href="https://twitter.com/FarrellEquip?lang=en" class="fa fa-twitter-square fa-3x"></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCEnbWFYzwSGmKJv9bOAsk4A" class="fa fa-youtube-square fa-3x"></a></li>
+        </ul>
+      </div>
+      
+      <div id="navMenu">
+        <div id="menuWrapper">
+          <ul id="menuPosition">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="#">Products</a>
+              <ul>
+                <li class="dropDownItem"><a href="aboutProducts.html">About Our Products</a></li>
+                <li class="dropDownItem"><a href="manufacturersList.html">Manufacturers List</a></li>
+                <li class="dropDownItem"><a href="rentals.html">Rental Company</a></li>
+                <li class="dropDownItem"><a href="catalog.html">Catalogs</a></li>
+                <li class="dropDownItem"><a href="msdsProductData.html">MSDS &amp; Product Data</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">How To &amp; Events</a>
+              <ul>
+                <li class="dropDownItem"><a href="calendarEvents.html">Calendar of Events</a></li>
+                <li class="dropDownItem"><a href="productSalesShow.html">Product Sales Show</a></li>
+                <li class="dropDownItem"><a href="classes.html">Classes</a></li>
+                <li class="dropDownItem"><a href="how-to.html">How To</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Forms &amp; Applications</a>
+              <ul>
+                <li class="dropDownItem"><a href="creditApp.html">Credit Application</a></li>
+                <li class="dropDownItem"><a href="rentalApp.html">Rental Application</a></li>
+                <li class="dropDownItem"><a href="taxExemptForm.html">Tax Exemption Forms</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Contact Us</a>
+              <ul>
+                <li class="dropDownItem"><a href="locationHours.html">Location &amp; Hours</a></li>
+                <li class="dropDownItem"><a href="aboutUs.html">About Us</a></li>
+                <li class="dropDownItem"><a href="jobOpp.html">Job Opportunities</a></li>
+                <li class="dropDownItem"><a href="javascript:void( window.open('contactForm.html', 'blank','scrollbars=yes,toolbar=no,width=700,height=600'))">Contact Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <br class="clearFloat" />
+      </div><!-- end of nav menu -->
+      
+    </div><!-- end of wrapper -->
+    
+    <div id="dl-menu" class="dl-menuwrapper">
+						  <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+            <ul class="dl-submenu">
+              <li>
+                <a href="aboutProducts.html">About Our Products</a>
+              </li>
+              <li>
+                <a href="manufacturersList.html">Manufacturers List</a>
+              </li>
+              <li>
+                <a href="rentals.html">Rental Company</a>
+              </li>
+              <li>
+                <a href="catalog.html">Catalogs</a>
+              </li>
+              <li>
+                <a href="msdsProductData.html">MSDS &amp; Product Data</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">How To &amp; Events</a>
+            <ul class="dl-submenu">
+              <li>
+                <a href="calendarEvents.html">Calendar of Events</a>
+              </li>
+              <li>
+                <a href="productSalesShow.html">Product Sales Show</a>
+              </li>
+              <li>
+                <a href="classes.html">Classes &amp; Seminars</a>
+              </li>
+              <li>
+                <a href="how-to.html">How To</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Forms &amp; Applications</a>
+            <ul class="dl-submenu">
+              <li>
+                <a href="creditApp.html">Credit Application</a>
+              </li>
+              <li>
+                <a href="rentalApp.html">Rental Application</a>
+              </li>
+              <li>
+                <a href="taxExemptForm.html">Tax Exemption Forms</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+            <ul class="dl-submenu">
+              <li>
+                <a href="locationHours.html">Location &amp; Hours</a>
+              </li>
+              <li>
+                <a href="aboutUs.html">About Us</a>
+              </li>
+              <li>
+                <a href="jobOpp.html">Job Opportunities</a>
+              </li>
+            <li>
+            <a href="javascript:void( window.open('contactForm.html', 'blank','scrollbars=yes,toolbar=no,width=700,height=600'))">Contact Form</a>
+            </li>
+            </ul>
+          </li>
+        </ul>
+					</div><!-- /dl-menuwrapper -->
+    
+    <!-- SEARCH BAR -->
+    <div id='cse' style='width: 100%;'>Loading</div>
+    
+    <div id="container">
+      <div id="time-line-events-2015">
+        <h3 class="farrellPageHeader page-header">2015 Timeline of Events</h3>
+        <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+              <img src="images/imgTimeline/cd-icon-location.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+
+            <div id="cd-timeline-content2" class="cd-timeline-content">
+              <h2>Farrell's Tool Shows</h2>
+              <ul>
+                <li>Appleton<span>July 27</span><span>10am till 2pm</span></li>
+                <li>Wausau<span>July 28</span><span>10am till 2pm</span></li>
+                <li>Eau Claire<span>July 29</span><span>10am till 2pm</span></li>
+                <li>Rochester<span>July 30</span><span>10am till 2pm</span></li>
+                <li>La Crosse<span>July 31</span><span>10am till 2pm</span></li>
+                <li>Madison<span>November 2 - 6</span><span>10am till 2pm</span></li>
+              </ul>
+              <span class="cd-date">July 27 - July 31</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+              <img src="images/imgTimeline/cd-icon-location.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+
+            <div id="cd-timeline-content3" class="cd-timeline-content">
+              <h2>Oktoberfest Parade Celebration</h2>
+              <p>Farrell Equipment &amp; Supply Co. Inc. <span>Invites you to our Oktoberfest Parade Celebrations</span></p>
+              <p><span>Front Row Seating</span><span> at the Biggest Stage on the Parade Route!!</span> <br><span>508 Monitor Street<br> La Crosse</span></p>
+              <p><span>Please bring your own chair if you want one.<br>Free parking is available on a space availability basis</span><br><span>(Call ahead for your parking pass 608-796-9300)</span></p>
+              <p></p>
+              <p></p>
+              <span class="cd-date">Saturday October 3</span>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+        </section> <!-- cd-timeline -->
+      </div><!-- end of 2015 time line of events -->
+      
+      <hr>
+        
+      <div id="time-line-events-2016">
+          <h3><a name="2016show">2016 Timeline of Events</a></h3>
+        <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+              <img src="images/imgTimeline/cd-icon-location.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+            <div id="cd-timeline-content1" class="cd-timeline-content">
+              <h2>Annual Product Sales Show</h2>
+              <ul class="bxslider">
+                <li class="productShowSlide1">
+                  <ul class="innerSlide">
+                    <li>The Biggest Event of the Year!</li>
+                    <li>Farrell Equipment &amp; Supply Co. Inc. <span>Invites you to the Annual Product Sales Show</span></li>
+                    <li></li>
+                    <li>One Day Only - March 11, 2016 - Don't Miss It!!!</li>
+                    <li>Keep up with the <span>latest in the industry!</span></li>
+                    <li>Over <span>30,000</span> sq. ft. of <span>Heated Show Space</span>!</li>
+                    <li>Over <span>230 Manufacturers</span> on Hand!</li>
+                    <li>Food &amp; Beverages Provided!</li>
+                    <li>Drawing for <span>free</span> flat-screen TVs</li>
+                    <li>...And Much More!!!</li>
+                  </ul>
+                </li>
+
+                <li class="productShowSlide2">
+                  <ul class="innerSlide">
+                    <h4>Product Demos</h4>
+                    <li>
+                      <ul>
+                         <li>Live Demos</li> 
+                        <li>Try out the products first hand!</li>
+                      </ul>
+                    </li>
+
+                    <h4>Decorative Concrete</h4>
+                    <li>
+                      <ul>
+                        <li>Stamps</li>
+                        <li>Overlays</li>
+                        <li>Stains</li>
+                        <li>Epoxies</li>
+                        <li>Much More!</li>
+                      </ul>
+                    </li>
+
+                    <h4>Power Tools</h4>
+                    <li>
+                      <ul>
+                        <li>Milwaukee</li>
+                        <li>Dewalt</li>
+                        <li>Bosch</li>
+                        <li>Stihl</li>
+                        <li>Makita</li>
+                        <li>MAX USA CORP.</li>
+                        <li>Fein</li>
+                      </ul>
+                    </li>
+
+                    <h4>Diamond Blades</h4>
+                    <li>
+                      <ul>
+                        <li>Husqvarna</li>
+                        <li>Farrell</li>
+                        <li>Lackmond</li>
+                        <li>Diamond Products</li>
+                        <li>Awesome Show Pricing</li>
+                        <li>Soft-Cut System</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="productShowSlide3">
+                  <ul class="innerSlide">
+                    <h4>Sealers</h4>
+                    <li>
+                      <ul>
+                        <li>TK</li>
+                        <li>Best Possible Prices of the Year!</li>
+                      </ul>
+                    </li>
+
+                    <h4>Forms &amp; Accessories</h4>
+                    <li>
+                      <ul>
+                        <li>All the Big Guys Will Be Here</li>
+                        <li>Priced to Sell!</li>
+                        <li>Steel/Ply</li>
+                        <li>Aluminum</li>
+                        <li>Plywood</li>
+                        <li>&amp; More!</li>
+                      </ul>
+                    </li>
+
+                    <h4>Construction Equipment</h4>
+                    <li>
+                      <ul>
+                        <li>Hundreds of Manufacturers will be present!!!</li>
+                        <li>Allen</li>
+                        <li>Bomag</li>
+                        <li>Marshall Town</li>
+                        <li>Husqvarna</li>
+                        <li>Knaack</li>
+                        <li>Kraft Tool Co.</li>
+                        <li>Genie</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="productShowSlide4">
+                  <ul class="innerSlide">
+                    <h4>New Products</h4>
+                    <li>
+                      <ul>
+                        <li>See BlazeTex's FR Clothing Line!!</li>
+                        <li>Showcase Brand New Products!</li>
+                        <li>See the Latest &amp; Greatest</li>
+                      </ul>
+                    </li>
+
+                    <h4>Construction Supplies</h4>
+                    <li>
+                      <ul>
+                        <li>Best Savings of the year!!!</li>
+                        <li>3M</li>
+                        <li>Lenox</li>
+                        <li>Freud</li>
+                        <li>Milwaukee</li>
+                        <li>Tremco</li>
+                        <li>Powers Fasteners</li>
+                        <li>Hot Buys!!</li>
+                      </ul>
+                    </li>
+
+                    <h4>Special Drawing</h4>
+                    <li>
+                      <ul>
+                        <li>Win one of 3 flat screen TVs!!!</li>
+                        <li>Enjoy Lunch On Us!!</li>
+                        <li>Enter The Special Drawing!</li>
+                        <li>Must be present to WIN!</li>
+                      </ul>
+                    </li>
+
+                    <h4>2015 Instructional Class</h4>
+                    <li>
+                      <ul>
+                        <li>Instructional Classes is not yet available</li>
+                        <li>Please Check back for future updates.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="productShowSlide5">
+                  <ul class="innerSlide">
+                    <li>
+                      <ul>
+                        <li>Don't Miss Out on The Biggest Event of the Year</li>
+                        <li>@ Farrell Equipment &amp; Supply Co. Inc.</li>
+                        <li>Located at: <br><span>1510 N. Hastings Way</span><span>Eau Claire, WI 54703</span></li>
+                        <li>If you have questions, </li>
+                        <li><span>please call </span>(715) 835-4334</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="cd-date">March 11, 2016</span>
+            </div> <!-- cd-timeline-content -->
+
+          </div> <!-- cd-timeline-block -->
+        </section>
+      </div><!-- end of 2016 time line of events -->
+    </div>
+    
+    <!-- LIST OF FARRELL'S STORE FRONTS -->
+    <div id="storeBarContainer">
+      <div id="storeLocations">
+        <div id="firstGroup">
+          <a href="locationHours.html">
+            <h2>Eau Claire</h2>
+            <ul class="list-unstyled">
+              <img src="images/storePic/150515eau.gif" alt="Eau Claire Store">
+              <li>(715) 835-4334</li>
+              <li>(800) 533-0909</li>
+              <li>Fax: (715) 835-4356</li>
+              <li>1510 N. Hastings Way</li>
+              <li>Eau Claire, WI 54703</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>Appleton</h2>
+            <ul>
+              <img src="images/storePic/150515app.gif" alt="Appleton Store">
+              <li>(920) 903-1985</li>
+              <li>(800) 533-0909</li>
+              <li>Fax: (920) 903-8278</li>
+              <li>1002 Truman Street</li>
+              <li>Kimberly, WI 54136</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>La Crosse</h2>
+            <ul>
+              <img src="images/storePic/150515lax.gif" alt="La Crosse Store">
+              <li>(608) 796-9300</li>
+              <li>(888) 533-0909</li>
+              <li>Fax: (608) 796-9435</li>
+              <li>508 Monitor Street</li>
+              <li>La Crosse, WI 54603</li>
+            </ul>
+          </a>
+        </div>
+        
+        <div id="secondGroup">
+          <a href="locationHours.html">
+            <h2>Madison</h2>
+            <ul>
+              <img src="images/storePic/150515mad.gif" alt="Madison Store">
+              <li>(608) 222-5372</li>
+              <li>(888) 533-7909</li>
+              <li>Fax: (608) 222-5405</li>
+              <li>6809 Mangrove Lane</li>
+              <li>Monona, WI 53713</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>Rochester</h2>
+            <ul>
+              <img src="images/storePic/150515roc.gif" alt="Rochester Store">
+              <li>(507) 252-0234</li>
+              <li>(888) 533-8909</li>
+              <li>Fax: (507) 252-0222</li>
+              <li>1635 3rd Avenue S.E.</li>
+              <li>Rochester, MN 55904</li>
+            </ul>
+          </a>
+
+          <a href="locationHours.html">
+            <h2>Wausau</h2>
+            <ul>
+              <img src="images/storePic/150515roc.gif" alt="Wausau Store">
+              <li>(715) 355-8300</li>
+              <li>(800) 933-5939</li>
+              <li>Fax: (715) 298-1662</li>
+              <li>7405 Commerce Drive</li>
+              <li>Weston, WI 54476</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <div id="footer">
+        <p>Copyright &copy; Farrell Equipment &amp; Supply Co., Inc 2015 <span>All Rights Reserved</span></p>
+      </div>
+    </footer>
+    
+    <!-- GOOGLE CSE -->
+    <script src='//www.google.com/jsapi' type='text/javascript'></script>
+    <script type='text/javascript'>
+      google.load('search', '1', {language: 'en', style: google.loader.themes.MINIMALIST});
+      google.setOnLoadCallback(function() {
+        var customSearchOptions = {};
+        var orderByOptions = {};
+        orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+        customSearchOptions['enableOrderBy'] = true;
+        customSearchOptions['orderByOptions'] = orderByOptions;
+        var imageSearchOptions = {};
+        imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+        customSearchOptions['enableImageSearch'] = true;
+        customSearchOptions['overlayResults'] = true;
+        var customSearchControl =   new google.search.CustomSearchControl('006364709504491078392:pi4jyhba8ow', customSearchOptions);
+        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        var options = new google.search.DrawOptions();
+        options.setAutoComplete(true);
+        customSearchControl.draw('cse', options);
+      }, true);
+    </script>
+    
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/mobileDropMenu.js"></script>
+    <script src="js/timelineEvents.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/calendarEvents.js"></script>
+    <script src="js/search-bar.js"></script>
+  </body>
+</html>
