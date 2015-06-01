@@ -167,21 +167,21 @@ body {
   
   .main-carousel .item:nth-child(2) .carousel-caption p {
     position: relative;
-    top: 10%;
+    top: 0%;
     font-size: 1em;
     font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(3) .carousel-caption p {
     position: relative;
-    top: 10%;
-    font-size: 1em;
+    top: 30%;
+    font-size: 1.5em;
     font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(4) .carousel-caption p {
     position: relative;
-    top: 20%;
+    top: 30%;
     font-size: 1em;
     font-weight: bolder;
   }
@@ -202,8 +202,8 @@ body {
   
   .main-carousel .item:nth-child(7) .carousel-caption p {
     position: relative;
-    top: 25%;
-    font-size: 1em;
+    top: 50%;
+    font-size: 1.5em;
     font-weight: bolder;
   }
   
@@ -244,7 +244,7 @@ body {
   
     .main-carousel .item:nth-child(13) .carousel-caption p {
     position: relative;
-    top: 20%;
+    top: 50%;
     font-size: 1em;
     font-weight: bolder;
   }
@@ -258,14 +258,14 @@ body {
   
   .main-carousel .item:nth-child(15) .carousel-caption p {
     position: relative;
-    top: 10%;
+    top: 20%;
     font-size: 0.9em;
     font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(16) .carousel-caption p {
     position: relative;
-    top: 20%;
+    top: 30%;
     font-size: 1em;
     font-weight: bolder;
   }
@@ -273,6 +273,13 @@ body {
   .main-carousel .item:nth-child(17) .carousel-caption p {
     position: relative;
     top: 20%;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  
+  .main-carousel .item:nth-child(19) .carousel-caption p {
+    position: relative;
+    top: 30%;
     font-size: 1em;
     font-weight: bolder;
   }
