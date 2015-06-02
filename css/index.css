@@ -156,104 +156,77 @@ body {
   .carousel-caption p {
     color: #000;
     font-size: 1em;
+    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(1) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(2) .carousel-caption p {
     position: relative;
     top: 0%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(3) .carousel-caption p {
     position: relative;
     top: 30%;
-    font-size: 1.5em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(4) .carousel-caption p {
     position: relative;
     top: 30%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(5) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(6) .carousel-caption p {
     position: relative;
     top: 25%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(7) .carousel-caption p {
     position: relative;
     top: 50%;
-    font-size: 1.5em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(8) .carousel-caption p {
     position: relative;
     top: 25%;
-    font-size: 1em;
-    font-weight: bolder;
   }
 
   .main-carousel .item:nth-child(9) .carousel-caption p {
     position: relative;
     top: 40%;
-    font-size: 1em;
-    font-weight: bolder;
   }
 
   .main-carousel .item:nth-child(10) .carousel-caption p {
     position: relative;
     top: 30%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(11) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
 
   .main-carousel .item:nth-child(12) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
     .main-carousel .item:nth-child(13) .carousel-caption p {
     position: relative;
     top: 50%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(14) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(15) .carousel-caption p {
@@ -266,43 +239,54 @@ body {
   .main-carousel .item:nth-child(16) .carousel-caption p {
     position: relative;
     top: 30%;
-    font-size: 1em;
-    font-weight: bolder;
   }
 
   .main-carousel .item:nth-child(17) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(19) .carousel-caption p {
     position: relative;
     top: 30%;
-    font-size: 1em;
-    font-weight: bolder;
+  }
+  
+  .main-carousel .item:nth-child(21) .carousel-caption p {
+    position: relative;
+    top: 30%;
+  }
+  
+  .main-carousel .item:nth-child(22) .carousel-caption p {
+    position: relative;
+    top: 10%;
+  }
+  
+  .main-carousel .item:nth-child(23) .carousel-caption p {
+    position: relative;
+    top: 0%;
+  }
+  
+  .main-carousel .item:nth-child(24) .carousel-caption p {
+    position: relative;
+    top: 0%;
   }
 }
 
 @media (min-width: 1200px) {
   .carousel-caption p {
     color: #000;
-    font-size: 1.3em;
+    font-size: 1em;
+    font-weight: bolder;
   }
     
   .main-carousel .item:nth-child(4) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(6) .carousel-caption p {
     position: relative;
     top: 25%;
-    font-size: 1em;
-    font-weight: bolder;
   }
 
   .main-carousel .item:nth-child(9) .carousel-caption p {
@@ -323,36 +307,25 @@ body {
     .main-carousel .item:nth-child(15) .carousel-caption p {
     position: relative;
     top: 10%;
-    font-size: 1em;
-    font-weight: bolder;
   }
 
   .main-carousel .item:nth-child(17) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1.2em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(18) .carousel-caption p {
     position: relative;
     top: 10%;
-    font-size: 1.1em;
-    font-weight: bolder;
   }
   
   .main-carousel .item:nth-child(19) .carousel-caption p {
     position: relative;
-    top: 20%;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
+    top: 20%;  }
   
   .main-carousel .item:nth-child(20) .carousel-caption p {
     position: relative;
     top: 20%;
-    font-size: 1.2em;
-    font-weight: bolder;
   }
 }
 
