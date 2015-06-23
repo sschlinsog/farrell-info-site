@@ -1,1 +1,21 @@
-Sitemap: http://example.com/searchSitemap.xml
+User-agent: *
+ Disallow: /farrellequipment.com/qr-catalog
+ Disallow: /farrellequipment.com/shop
+
+ Disallow: /farrellequipment.com/catalog
+ Disallow: /farrellequipment.com/cgi-bin
+ Disallow: /farrellequipment.com/classespdfs
+ Disallow: /farrellequipment.com/components
+ Disallow: /farrellequipment.com/documents
+ Disallow: /farrellequipment.com/farrellweb
+ Disallow: /farrellequipment.com/featured
+ Disallow: /farrellequipment.com/GeneratedItems
+ Disallow: /farrellequipment.com/maps
+ Disallow: /farrellequipment.com/menumachine
+ Disallow: /farrellequipment.com/msds
+ Disallow: /farrellequipment.com/orders
+ Disallow: /farrellequipment.com/rentals
+ Disallow: /farrellequipment.com/shows
+ Disallow: /farrellequipment.com/slideshow
+  
+ Sitemap: http://www.farrellequipment.com/searchSitemap.xml
